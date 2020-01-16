@@ -5,6 +5,8 @@ function todoReducer(state, action) {
       return state.map(todo =>
         todo.name === action.payload.name ? { ...todo, isDone: !todo.isDone } : todo
       );
+    case 'ADD_TODO':
+      return [...state, { name: action.payload, isDone: false }];
     default:
       return state;
   }

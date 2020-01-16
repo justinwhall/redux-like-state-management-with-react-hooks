@@ -7,7 +7,7 @@ const Todos = () => {
 
   return (
     <div className="container">
-      <h1>My Todos</h1>
+      <strong>All Todos</strong>
       {state.map(todo => (
         <Todo {...todo} key={todo.name} />
       ))}

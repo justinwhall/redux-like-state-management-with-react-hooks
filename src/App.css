@@ -38,3 +38,21 @@ code {
 .is-done:hover {
   cursor: pointer;
 }
+
+.add-todo {
+  padding-top: 45px;
+}
+
+.add-todo input {
+  width: 100%;
+}
+
+.add-todo label {
+  margin-top: -24px;
+}
+
+.add-todo {
+  display: grid;
+  grid-template-columns: auto 150px;
+  column-gap: 10px;
+}

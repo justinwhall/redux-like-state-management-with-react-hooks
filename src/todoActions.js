@@ -4,8 +4,8 @@ export const toggleTodo = (name, dispatch) =>
     payload: { name }
   });
 
-export const resetPackage = (category, dispatch) =>
+export const addTodo = (todo, dispatch) =>
   dispatch({
-    type: 'RESET_PACKAGE',
-    payload: category
+    type: 'ADD_TODO',
+    payload: todo
   });
